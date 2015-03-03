@@ -1,0 +1,15 @@
+.background-gradient(@from, @to, @first-color, @second-color) {
+  background: @first-color; /* Old browsers */
+  background: -moz-linear-gradient(@from,  @first-color 0%, @second-color 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left @from, left @to, color-stop(0%,@first-color), color-stop(100%,@second-color)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(@from,  @first-color 0%,@second-color 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(@from,  @first-color 0%,@second-color 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(@from,  @first-color 0%,@second-color 100%); /* IE10+ */
+  background: linear-gradient(to @to,  @first-color 0%,@second-color 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@first-color', endColorstr='@second-color',GradientType=0 ); /* IE6-9 */
+}
+
+.border-radius(@px) {
+  -webkit-border-radius: @px;
+  border-radius: @px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "csskit",
+  "version": "1.0.0",
+  "description": "A css base kit with all the tool needed to happily develop",
+  "main": "index.html",
+  "scripts": {
+    "test": "node less-watch-compiler ./less ./css",
+    "start" : "node less-watch-compiler ./less ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silverspectro/Csskit.git"
+  },
+  "author": "Ciro DE CARO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silverspectro/Csskit/issues"
+  },
+  "homepage": "https://github.com/silverspectro/Csskit",
+  "dependencies": {
+    "less": "^2.4.0"
+  }
+}
